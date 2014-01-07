@@ -1,4 +1,4 @@
-Brunch + Flask
+Brunch + Karma
 ==============
 
 Getting Started
