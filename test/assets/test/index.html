@@ -4,8 +4,9 @@
   <title>Mocha Tests</title>
   <link rel="stylesheet" href="stylesheets/test.css" />
 
-  <script src="mocha.js"></script>
-  <script src="chai.js"></script>
+  <script src="jasmine.js"></script>
+  <script src="jasmine-html.js"></script>
+  <script src="boot.js"></script>
 
   <script src="../javascripts/vendor.js"></script>
   <script src="../javascripts/app.js"></script>
@@ -15,9 +16,5 @@
   <script src="run-all.js"></script>
 </head>
 <body>
-  <div id="mocha"></div>
-  <script>
-    (window.mochaPhantomJS || window.mocha).run();
-  </script>
 </body>
 </html>
