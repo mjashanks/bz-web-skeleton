@@ -8,7 +8,7 @@ Getting Started
 npm install -g bower brunch
 brunch new https://github.com/mikew/brunch-karma myapp
 cd myapp
-brunch watch --server
+npm run start
 ```
 
 That's it. Visit `http://localhost:3333/`, as you save files in `app/` that
@@ -29,7 +29,7 @@ Testing
 **Using [Karma][karma]:**
 
 ```bash
-node_modules/.bin/karma start
+npm run test
 ```
 
 **Using PhantomJS:**
@@ -41,7 +41,7 @@ node_modules/.bin/karma start --browsers PhantomJS
 
 **Using the browser:**
 
-Run `brunch watch --server` and open `http://localhost:3333/test/`
+Run `npm run start` and open `http://localhost:3333/test/`
 in your browser.
 
 [brunch]: http://brunch.io/

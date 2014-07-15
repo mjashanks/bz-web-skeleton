@@ -8,8 +8,9 @@
     "url": ""
   },
   "scripts": {
-    "start": "brunch watch --server",
-    "test": "node_modules/.bin/karma start"
+    "start": "npm install && bower install && rm -rf public/; brunch watch --server",
+    "test": "npm install && bower install && node_modules/.bin/karma start",
+    "clean": "rm -rf node_modules/; rm -rf bower_components/; rm -rf public/"
   },
   "dependencies": {
     "javascript-brunch": ">= 1.0 < 1.8",
