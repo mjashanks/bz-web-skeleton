@@ -1,15 +1,15 @@
 {
-  "name": "your-app",
-  "description": "Description",
-  "author": "Your Name",
+  "name": "kittybrew",
+  "description": "the kitty for the brew",
+  "author": "Michael Shanks",
   "version": "0.0.1",
   "repository": {
     "type": "git",
     "url": ""
   },
   "scripts": {
-    "start": "npm install && bower install && rm -rf public/; brunch watch --server",
-    "test": "npm install && bower install && node_modules/.bin/karma start",
+    "start": "brunch watch --server",
+    "test": "brunch watch --server --env test & karma start karma.conf.coffee",
     "clean": "rm -rf node_modules/; rm -rf bower_components/; rm -rf public/"
   },
   "dependencies": {

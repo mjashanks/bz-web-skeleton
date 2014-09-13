@@ -6,12 +6,16 @@ module.exports = (config) -> config.set
 
   # list of files / patterns to load in the browser
   files: [
-    'public/javascripts/vendor.js',
-    'public/javascripts/app.js',
-    'public/test/javascripts/test-vendor.js',
-    'public/test/setup-frameworks.js',
-    'public/test/javascripts/test.js',
-    'public/test/run-all.js',
+    'public/testenv/javascripts/vendor.js',
+    'public/testenv/javascripts/app.js',
+    { pattern: 'public/testenv/javascripts/vendor.js.map', included: false, served: true},
+    { pattern: 'public/testenv/javascripts/app.js.map', included: false, served: true},
+    'public/testenv/test/javascripts/test-vendor.js',
+    { pattern: 'public/testenv/test/javascripts/test-vendor.js.map', included: false, served: true},
+    'public/testenv/test/setup-frameworks.js',
+    'public/testenv/test/javascripts/test.js',
+    { pattern: 'public/testenv/test/javascripts/test.js.map', included: false, served: true},
+    'public/testenv/test/run-all.js',
   ]
 
   # list of files to exclude
