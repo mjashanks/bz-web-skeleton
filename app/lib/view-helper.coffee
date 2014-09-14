@@ -1,6 +1,7 @@
 # Application-specific view helpers
 # http://handlebarsjs.com/#helpers
 # --------------------------------
+# Mike Says: dont need that as we are using jade, but im keeping it in anayway (and removing ther reference)
 utils = require './utils'
 
 register = (name, fn) ->

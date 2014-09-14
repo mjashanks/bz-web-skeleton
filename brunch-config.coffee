@@ -11,7 +11,7 @@ exports.config =
         'stylesheets/app.css': /^(app|vendor|bower_components)/
 
     templates:
-      joinTo: 'app.js'
+      joinTo: 'javascripts/app.js'
 
   paths:
     public: 'public/devenv'
@@ -36,7 +36,7 @@ exports.config =
             'test/stylesheets/test.css': /^test/
 
         templates:
-          joinTo: 'app.js'
+          joinTo: 'javascripts/app.js'
 
       paths:
         public: "public/testenv"

@@ -8,18 +8,20 @@
     "url": ""
   },
   "scripts": {
-    "start": "brunch watch --server",
-    "test": "brunch watch --server --env test & karma start karma.conf.coffee",
+    "devenv": "brunch watch --server",
+    "testenv": "brunch watch --server --env test",
+    "karma": "karma start karma.conf.coffee",
     "clean": "rm -rf node_modules/; rm -rf bower_components/; rm -rf public/"
   },
   "dependencies": {
-    "javascript-brunch": ">= 1.0 < 1.8",
-    "css-brunch": ">= 1.0 < 1.8",
-    "sass-brunch": ">= 1.0 < 1.8",
-    "coffee-script-brunch": ">= 1.0 < 1.8",
-    "uglify-js-brunch": ">= 1.0 < 1.8",
+    "auto-reload-brunch": ">= 1.0 < 1.8",
     "clean-css-brunch": ">= 1.0 < 1.8",
-    "auto-reload-brunch": ">= 1.0 < 1.8"
+    "coffee-script-brunch": ">= 1.0 < 1.8",
+    "css-brunch": ">= 1.0 < 1.8",
+    "jade-brunch": "^1.8.1",
+    "javascript-brunch": ">= 1.0 < 1.8",
+    "sass-brunch": ">= 1.0 < 1.8",
+    "uglify-js-brunch": ">= 1.0 < 1.8"
   },
   "devDependencies": {
     "coffee-script": "~1.7.0",
