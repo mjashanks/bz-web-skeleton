@@ -1,48 +1,55 @@
-Brunch + Karma
+BZ Web Skeleton
 ==============
+
+Overview
+--------
+
+Brunch - Build Tool
+Backbone - Client side MV* framework
+Chaplin - Metaframework for Backbone
+
+Karma - Client side test runner
+Jasmine - Test Framework
+
+Jade - HTML Templating
+Stylus - CSS Templating 
 
 Getting Started
 ---------------
 
+Install Brunch Globally
+
 ```bash
-npm install -g bower brunch
-brunch new https://github.com/mikew/brunch-karma myapp
-cd myapp
-npm run start
+npm install brunch -g
 ```
 
-That's it. Visit `http://localhost:3333/`, as you save files in `app/` that
-page will update.
+Install Karma Globally
 
-Features
---------
+```bash
+npm install karma -g
+```
 
-- Javascript
-- Coffeescript
-- CSS
-- Sass
-- Karma
+Install Skeleton Dependencies
+```bash
+npm install
+```
 
-Testing
+Running
 -------
 
-**Using [Karma][karma]:**
+In test mode
+- Watches files, and runs unit tests on change
+- Can browse site
+- NO auto reload of site
 
 ```bash
-npm run test
+npm run testenv
+npm run karma
 ```
 
-**Using PhantomJS:**
+In dev mode
+- Browse site with auto-reload on file change
 
 ```bash
-node_modules/.bin/karma start --browsers PhantomJS
-# --reporters junit --single-run can come in handy as well.
+npm run devenv
 ```
-
-**Using the browser:**
-
-Run `npm run start` and open `http://localhost:3333/test/`
-in your browser.
-
-[brunch]: http://brunch.io/
-[karma]: http://karma-runner.github.io/

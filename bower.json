@@ -1,5 +1,5 @@
 {
-  "name": "kittybrew",
+  "name": "bz-web-skeleton",
   "version": "0.1.0",
   "main": "public/javascripts/app.js",
   "dependencies": {

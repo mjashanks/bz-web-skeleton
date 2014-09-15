@@ -1,6 +1,6 @@
 {
-  "name": "kittybrew",
-  "description": "the kitty for the brew",
+  "name": "bz-web-skeleton",
+  "description": "brunch, chaplin, backbone, karma, jasmine, jade, stylus",
   "author": "Michael Shanks",
   "version": "0.0.1",
   "repository": {
